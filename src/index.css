@@ -11,20 +11,12 @@
 }
 
 main {
-  background-image: url('assets/section 1/react-background.png');
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: center;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   /*background: #27292c;*/
   color: white;
-
 }
 
-.custom-list li::marker {
-  color: var(--react-blue); /* React blue */
-}
 
