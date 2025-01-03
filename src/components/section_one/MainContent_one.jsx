@@ -1,4 +1,4 @@
-export default function MainContent() {
+export default function MainContent_one() {
   return (
     <>
       <main className="p-10 flex flex-col min-h-screen bg-gray-500 items-center">

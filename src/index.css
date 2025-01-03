@@ -10,13 +10,11 @@
   color: var(--react-blue);
 }
 
-main {
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   /*background: #27292c;*/
-  color: white;
+  color: black;
 }
 
 

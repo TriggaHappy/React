@@ -1,6 +1,6 @@
-import reactLogo from '../../assets/section 1/react.svg';
+import reactLogo from '../../assets/section_one/react.svg';
 
-export default function Navbar() {
+export default function Navbar_one() {
   return (
     <>
       <section className="flex items-center shadow-2xl bg-gray-800 z-50 h-28">
