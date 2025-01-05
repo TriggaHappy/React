@@ -20,10 +20,11 @@ export default function App() {
     <>
       <Navbar_two />
       <Entry />
-      <Joke setup={jokes.setup_one} punchline={jokes.punchline_one} />
-      <Joke setup={jokes.setup_two} punchline={jokes.punchline_two} />
-      <Joke setup={jokes.setup_three} punchline={jokes.punchline_three} />
-      <Joke setup={jokes.setup_four} punchline={jokes.punchline_four} />
+      {/*<Joke setup={jokes.setup_one} punchline={jokes.punchline_one} />*/}
+      {/*<Joke punchline={jokes.punchline_one} />*/}
+      {/*<Joke setup={jokes.setup_two} punchline={jokes.punchline_two} />*/}
+      {/*<Joke setup={jokes.setup_three} punchline={jokes.punchline_three} />*/}
+      {/*<Joke setup={jokes.setup_four} punchline={jokes.punchline_four} />*/}
     </>
   );
 }
