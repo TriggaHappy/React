@@ -2,29 +2,36 @@ import './index_section_one/section_one_index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar_two from './components/section_two/Navbar_two.jsx';
 import Entry from './components/section_two/Entry.jsx';
-import Joke from './components/section_two/Joke.jsx';
 
 export default function App() {
-  const jokes = {
-    setup_one: 'I got my daughter a fridge for her birthday.',
-    punchline_one: "I can't wait to see her face light up when she opens it",
-    setup_two: 'How did the hacker escape the police.',
-    punchline_two: 'He just ransomware!',
-    setup_three: "Why don't pirates travel on mountain roads?",
-    punchline_three: 'Scurvy',
-    setup_four: 'Why do bees stay in the hive in the winter?',
-    punchline_four: 'Swarm.',
-  };
-
+  const travelData = [
+    {
+      title: 'Mount Fuji',
+      location: 'Japan',
+      googleMapsUrl:
+        'https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu',
+      startDate: '12 Jan, 2021',
+      endDate: '24 Jan, 2021',
+      description:
+        'Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.',
+      imageUrl: 'https://scrimba.com/links/travel-journal-japan-image-url',
+    },
+  ];
   return (
     <>
       <Navbar_two />
-      <Entry />
-      {/*<Joke setup={jokes.setup_one} punchline={jokes.punchline_one} />*/}
-      {/*<Joke punchline={jokes.punchline_one} />*/}
-      {/*<Joke setup={jokes.setup_two} punchline={jokes.punchline_two} />*/}
-      {/*<Joke setup={jokes.setup_three} punchline={jokes.punchline_three} />*/}
-      {/*<Joke setup={jokes.setup_four} punchline={jokes.punchline_four} />*/}
+      {travelData.map((data, index) => (
+        <Entry
+          key={index}
+          title={data.title}
+          location={data.location}
+          googleMapsUrl={data.googleMapsUrl}
+          startDate={data.startDate}
+          endDate={data.endDate}
+          description={data.description}
+          img={{ src: data.imageUrl, alt: 'Mount Fuji' }}
+        />
+      ))}
     </>
   );
 }
