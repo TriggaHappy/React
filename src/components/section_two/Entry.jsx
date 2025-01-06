@@ -2,24 +2,6 @@ import Fuji from '../../assets/section_two/mt_fuji.jpg';
 import Marker from '../../assets/section_two/marker.svg';
 
 export default function Entry(props) {
-  const nums = [1, 2, 3, 4, 5];
-  // -->       [1, 4, 9, 16, 25]
-  // Your code here
-
-  const squared = nums.map((x) => x * x);
-  console.log(squared);
-
-  const names = ['alice', 'bob', 'charlie', 'danielle'];
-  const capitalized = names.map(
-    (name) => name.charAt(0).toUpperCase() + name.slice(1)
-  );
-  console.log(capitalized);
-
-  const pokemon = ['Bulbasaur', 'Charmander', 'Squirtle'];
-
-  const wraps = pokemon.map((pokemon) => '<p>' + pokemon + '</p>');
-  console.log(wraps);
-
   return (
     <>
       <section className="flex text-black h-60 pt-10 pl-10 justify-center items-center">
