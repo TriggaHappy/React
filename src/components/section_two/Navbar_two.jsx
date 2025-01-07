@@ -5,7 +5,7 @@ export default function Navbar_two() {
     <>
       <section className="flex h-10 bg-red-500 items-center justify-center">
         <img src={Globe} />
-        <div className="pl-2">my travel journal.</div>
+        <div className="pl-2 text-white text-xl">my travel journal.</div>
       </section>
     </>
   );
