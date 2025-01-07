@@ -1,5 +1,5 @@
-import Fuji from '../../assets/section_two/mt_fuji.jpg';
-import Marker from '../../assets/section_two/marker.svg';
+import Fuji from '../../assets/2_section_two/mt_fuji.jpg';
+import Marker from '../../assets/2_section_two/marker.svg';
 
 export default function Entry(props) {
   const entryData = props.entry;
