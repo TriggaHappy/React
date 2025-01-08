@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --react-blue: #61DAFB;
 }
@@ -16,5 +20,4 @@ body {
   /*background: #27292c;*/
   color: black;
 }
-
 
