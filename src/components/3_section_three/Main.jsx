@@ -1,5 +1,13 @@
+import React from 'react';
+
 export default function Main() {
-  const ingredients = ['Chicken', 'Oregano', 'Tomatoes'];
+  const [ingredients, setIngredients] = React.useState([
+    'Chicken',
+    'Oregano',
+    'Tomatoes',
+  ]);
+  const [error, setError] = React.useState(null);
+
   const ingredientsEntry = ingredients.map((entry) => (
     <li key={entry}>{entry}</li>
   ));
@@ -8,7 +16,13 @@ export default function Main() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get('ingredient');
-    ingredients.push(newIngredient);
+    if (newIngredient === '') {
+      alert('Box cannot be empty');
+    } else {
+      !ingredients.includes(newIngredient)
+        ? setIngredients((prevIngredient) => [...prevIngredient, newIngredient])
+        : alert('Item already exists');
+    }
   }
 
   return (
