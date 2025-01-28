@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer_one() {
   return (
     <>
       <footer className="mt-auto bg-gray-800">
