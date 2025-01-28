@@ -3,6 +3,7 @@ import Navbar_two from './components/2_section_two/Navbar_two.jsx';
 import Entry from './components/2_section_two/Entry.jsx';
 import travelData from './assets/2_section_two/section_two_data/travelData.js';
 import Navbar_three from './components/3_section_three/Navbar_three.jsx';
+import Main from './components/3_section_three/Main.jsx';
 
 export default function App() {
   /*section Two
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <>
       <Navbar_three />
+      <Main />
     </>
   );
 }
