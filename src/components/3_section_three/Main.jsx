@@ -1,20 +1,14 @@
 import React from 'react';
 
 export default function Main() {
-  const [ingredients, setIngredients] = React.useState([
-    'Chicken',
-    'Oregano',
-    'Tomatoes',
-  ]);
+  const [ingredients, setIngredients] = React.useState([]);
   const [error, setError] = React.useState(null);
 
   const ingredientsEntry = ingredients.map((entry) => (
     <li key={entry}>{entry}</li>
   ));
 
-  function formSubmitting(event) {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+  function addIngredient(formData) {
     const newIngredient = formData.get('ingredient');
     if (newIngredient === '') {
       alert('Box cannot be empty');
@@ -27,7 +21,7 @@ export default function Main() {
 
   return (
     <main className="pt-20">
-      <form className="flex justify-center gap-3" onSubmit={formSubmitting}>
+      <form className="flex justify-center gap-3" action={addIngredient}>
         <input
           className="border-2 rounded-lg border-black shadow-xl flex-grow min-w-4 max-w-lg p-1"
           aria-label="Add ingredient"
