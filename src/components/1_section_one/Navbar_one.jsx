@@ -1,4 +1,4 @@
-import reactLogo from '../../assets/section_one/react.svg';
+import reactLogo from '../../assets/1_section_one/react.svg';
 
 export default function Navbar_one() {
   return (

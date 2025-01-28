@@ -1,4 +1,4 @@
-import Globe from '../../assets/section_two/globe.svg';
+import Globe from '../../assets/2_section_two/globe.svg';
 
 export default function Navbar_two() {
   return (
