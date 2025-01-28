@@ -16,6 +16,14 @@ export default function StatePractice() {
     '🛷🔔',
     '🥩🍝',
   ];
+  const [contact, setContact] = React.useState({
+    firstName: 'John',
+    lastName: 'Doe',
+    phone: '+1 (212) 555-1212',
+    email: 'itsmyrealname@example.com',
+    isFavorite: false,
+  });
+
   const thingsElements = myFavoriteThings.map((thing) => (
     <p key={thing}>{thing}</p>
   ));
